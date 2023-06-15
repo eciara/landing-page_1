@@ -25,6 +25,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o'
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 const routes: Routes = [
   {
@@ -59,6 +62,8 @@ const routes: Routes = [
     MatMenuModule,
     MatButtonModule,
     MatToolbarModule,
+    MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

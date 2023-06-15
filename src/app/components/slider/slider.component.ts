@@ -8,25 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SliderComponent  {
+  images = [
+    {
+      src: '../../../assets/images/slider-1.jpg',
+      alt: 'Contrary to popular'
+    },
+    {
+      src: '../../../assets/images/slider-2.jpg',
+      alt: 'Lorem Ipsum is not simply '
+    },
+    {
+      src: '../../../assets/images/slider-3.jpg',
+      alt: 'Lorem ipsum dolor sit amet,'
+    },
+  ]
+
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    autoplay: true,
+    center: true,
     dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
     responsive: {
       0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      },
-      740: {
-        items: 3
-      },
-      940: {
         items: 1
       }
     },

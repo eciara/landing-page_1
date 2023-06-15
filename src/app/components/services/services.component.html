@@ -1,1 +1,16 @@
-<p>services works!</p>
+<div fxLayout="column" fxLayoutAlign="center center">
+    <h1>Awesome Services</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod ducimus repellendus? Rerum magnam illum
+        impedit iste enim perferendis.</p>
+</div>
+<div fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <mat-card *ngFor="let card of cards" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="33"  fxLayout="column" fxLayoutAlign="center center">
+        <mat-card-title>
+            {{ card.title }}
+        </mat-card-title>
+        <mat-card-content>
+            {{ card.desc }}
+        </mat-card-content>
+    </mat-card>
+</div>
+<button mat-raised-button color="primary">see all services</button>

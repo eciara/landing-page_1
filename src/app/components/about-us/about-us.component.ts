@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent {
-
+  counters = [
+    {
+      number: 600,
+      desc: 'projects'
+    },
+    {
+      number: 300,
+      desc: 'clients'
+    },
+    {
+      number: 850,
+      desc: 'hours'
+    },
+  ]
 }

@@ -1,1 +1,33 @@
-<p>our-mision works!</p>
+<div class="our-mision" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="our-mision__body"  fxFlex.sm="50">
+        <p class="section__title">Our mission</p>
+        <h2 class="section__header">
+            Create Your Way To Success
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio voluptates possimus sit quaerat
+            aspernatur recusandae! Temporibus ab ut iste laudantium cumque molestiae, omnis molestias quidem, laboriosam
+            cupiditate beatae quos?</p>
+        <div class="our-mission__box" *ngFor="let box of boxes" fxLayout="row" fxLayoutAlign="start center">
+            <div class="our-mission__icons" fxFlex="15">
+                <mat-icon aria-hidden="false" aria-label="">
+                    {{ box.icon }}
+                </mat-icon>
+            </div>
+            <div class="our-mission__aside" fxFlex="70">
+                <h4>{{ box.title }}</h4>
+                <p>{{ box.desc }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="our-mision__images" fxFlex="50" >
+        <mat-grid-list cols="2" rowHeight="100px">
+            <mat-grid-tile *ngFor="let card of cards"
+                [colspan]="card.cols" 
+                [rowspan]="card.rows"
+                [style.background-image]="'url(' + card.image + ')'" 
+                [style.background-position]="'center'"
+                [style.background-size]="'cover'">
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

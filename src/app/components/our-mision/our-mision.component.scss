@@ -1,0 +1,14 @@
+
+.mat-icon {
+    width: 100%;
+    height: 60px;
+    font-size: 4rem;
+}
+
+.our-mision {
+    &__images {
+        @media (max-width: 768px) {
+            // width: 100%;
+        }
+    }
+}

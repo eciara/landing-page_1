@@ -27,7 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatIconModule} from '@angular/material/icon';
 
 const routes: Routes = [
   {
@@ -64,6 +64,7 @@ const routes: Routes = [
     MatToolbarModule,
     MatCardModule,
     MatGridListModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

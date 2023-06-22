@@ -1,1 +1,18 @@
-<p>team works!</p>
+<div class="our-team__header">
+    <h2 class="section__title">
+        Our Team
+    </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque illum exercitationem ipsa? Dolore ea, sit quos
+        impedit perferendis eos in asperiores veniam doloribus veritatis nesciun.</p>
+</div>
+<div class="our-team__aside" fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-card class="example-card" fxFlex="32" *ngFor="let person of cardTeam">
+        <img mat-card-image [src]="person.image" [alt]="person.name">
+        <mat-card-title>
+            {{ person.name }}
+        </mat-card-title>
+        <mat-card-content>
+            <p>{{ person.position }}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

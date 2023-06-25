@@ -18,6 +18,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { FaqComponent } from './components/faq/faq.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import {BanerComponent} from './components/baner/baner.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CarouselModule } from 'ngx-owl-carousel-o'
@@ -28,6 +29,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 const routes: Routes = [
   {
@@ -52,6 +54,7 @@ const routes: Routes = [
     FaqComponent,
     ContactComponent,
     FooterComponent,
+    BanerComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +68,7 @@ const routes: Routes = [
     MatCardModule,
     MatGridListModule,
     MatIconModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

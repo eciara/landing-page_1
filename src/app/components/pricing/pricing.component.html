@@ -1,1 +1,30 @@
-<p>pricing works!</p>
+<div class="pricing__body container text-center">
+    <h2 class="section__title">
+        Pricing
+    </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam, unde aperiam aspernatur saepe maxime consequuntur veliipsum a inventore repudiandae! Facilis, consequuntur blanditiis similique perspiciatis minus doloremque dolor.</p>
+    <div class="pricing__aside" fxLayout="row" fxLayoutAlign="space-around center">
+        <mat-list role="list" *ngFor="let item of pricingList; let i = index" 
+            [class.recommend]="i == 1">
+            <mat-list-item role="listitem">
+                {{ item.price }}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                {{ item.title }}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                {{ item.feature1 }}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                {{ item.feature3 }}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                {{ item.feature4 }}
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                {{ item.feature5 }}
+            </mat-list-item>
+            <button mat-raised-button color="accent">Order now</button>
+        </mat-list>
+    </div>
+</div>

@@ -30,6 +30,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { PartnersComponent } from './components/partners/partners.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,7 @@ const routes: Routes = [
     ContactComponent,
     FooterComponent,
     BanerComponent,
+    PartnersComponent,
   ],
   imports: [
     BrowserModule,

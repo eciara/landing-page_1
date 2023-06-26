@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    background: #07727e;
+    @media (min-width: 992px) {
+        padding-block: 4rem;
+    }
+}
+
+.partners {
+    &__image {
+        height: 120px;
+    }
+}

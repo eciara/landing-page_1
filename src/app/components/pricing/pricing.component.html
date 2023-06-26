@@ -2,11 +2,12 @@
     <h2 class="section__title">
         Pricing
     </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam, unde aperiam aspernatur saepe maxime consequuntur veliipsum a inventore repudiandae! Facilis, consequuntur blanditiis similique perspiciatis minus doloremque dolor.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis numquam, unde aperiam aspernatur saepe
+        maxime consequuntur veliipsum a inventore repudiandae! Facilis, consequuntur blanditiis similique perspiciatis
+        minus doloremque dolor.</p>
     <div class="pricing__aside" fxLayout="row" fxLayoutAlign="space-around center">
-        <mat-list role="list" *ngFor="let item of pricingList; let i = index" 
-            [class.recommend]="i == 1">
-            <mat-list-item role="listitem">
+        <mat-list role="list" *ngFor="let item of pricingList; let i = index" [class.recommend]="i == 1">
+            <mat-list-item role="listitem" class="pricing__list--price">
                 {{ item.price }}
             </mat-list-item>
             <mat-list-item role="listitem">

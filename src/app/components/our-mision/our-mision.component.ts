@@ -35,17 +35,17 @@ export class OurMisionComponent {
     {
       cols: 1, 
       rows: 4,
-      image: '../../../assets/images/our-mision-1.jpg'
+      image: '../../../assets/images/our-mision/our-mision-1.jpg'
     },
     {
       cols: 1, 
       rows: 4,
-      image: '../../../assets/images/our-mision-2.jpg'
+      image: '../../../assets/images/our-mision/our-mision-2.jpg'
     },
     {
       cols: 2, 
       rows: 3,
-      image: '../../../assets/images/our-mision-3.jpg'
+      image: '../../../assets/images/our-mision/our-mision-3.jpg'
     },
   ];
 }

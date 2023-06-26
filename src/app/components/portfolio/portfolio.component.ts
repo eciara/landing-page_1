@@ -24,27 +24,27 @@ export class PortfolioComponent {
   portfolioGallery = [
     {
         id: 1,
-        image: '../../../assets/images/portfolio-1.jpg'
+        image: '../../../assets/images/portfolio/portfolio-1.jpg'
     },
     {
         id: 2,
-        image: '../../../assets/images/portfolio-2.jpg'
+        image: '../../../assets/images/portfolio/portfolio-2.jpg'
     },
     {
         id: 3,
-        image: '../../../assets/images/portfolio-3.jpg'
+        image: '../../../assets/images/portfolio/portfolio-3.jpg'
     },
     {
         id: 4,
-        image: '../../../assets/images/portfolio-4.jpg'
+        image: '../../../assets/images/portfolio/portfolio-4.jpg'
     },
     {
         id: 5,
-        image: '../../../assets/images/portfolio-5.jpg'
+        image: '../../../assets/images/portfolio/portfolio-5.jpg'
     },
     {
         id: 6,
-        image: '../../../assets/images/portfolio-6.jpg'
+        image: '../../../assets/images/portfolio/portfolio-6.jpg'
     },
   ]
 }

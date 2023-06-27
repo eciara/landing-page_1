@@ -1,0 +1,40 @@
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.testimonials__body {
+    position: relative;
+
+    .owl-nav {
+
+        .owl-next,
+        .owl-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $accent;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 0;
+        }
+
+        .owl-next {
+            right: -1.85rem;
+            &:after {
+                content: "\27F6";
+            }
+        }
+
+        .owl-prev {
+            left: -1.85rem;
+            &:after {
+                content: "\27F5";
+            }
+        }
+    }
+}

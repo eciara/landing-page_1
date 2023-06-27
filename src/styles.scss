@@ -17,9 +17,7 @@ $my-app-theme: mat.define-light-theme((color: (primary: $my-app-primary,
 @include mat.all-component-themes($my-app-theme);
 
 /* You can add global styles to this file, and also import other style files */
-@import '~normalize.css';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import '~normalize.css', '../src/assets/styles/styles';
 
 html,
 body {
@@ -33,11 +31,20 @@ html {
 body {
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-// variables
-$primary: #333;
-$accent: #07727e;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+    padding: 0;
+    margin: 0;
+}
 
 .container {
     display: block;
@@ -61,36 +68,6 @@ $accent: #07727e;
 
     @media (min-width: 1400px) {
         max-width: 1320px;
-    }
-}
-
-.section {
-    &__title {
-        font-size: 3rem;
-        font-weight: 600;
-        line-height: 1.1;
-    }
-
-    &__subtitle {
-        position: relative;
-        font-size: 1rem;
-        font-weight: 800;
-        font-style: italic;
-        letter-spacing: 1px;
-        text-align: left;
-        text-transform: capitalize;
-        color: #07727e;
-
-        &:after {
-            content: "";
-            width: 50px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #07727e;
-            display: inline-block;
-            height: 2px;
-            margin-left: 10px;
-        }
     }
 }
 

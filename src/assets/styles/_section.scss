@@ -1,0 +1,53 @@
+
+.section {
+
+    @media screen and (min-width: 992px) {
+        padding-block: 6rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    &__subtitle {
+        position: relative;
+        font-size: 1rem;
+        font-weight: 800;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: capitalize;
+        color: $accent;
+
+        &:after {
+            content: "";
+            width: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $accent;
+            display: inline-block;
+            height: 2px;
+            margin-left: 10px;
+        }
+    }
+    &__copy {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        margin: 1.5rem auto;
+
+        @media screen and (min-width: 992px) {
+            width: 60%;
+        }
+
+        &:after {
+            content: '\2043 \2043 \2043';
+            display: block;
+            font-size: 4rem;
+            margin-top: .75rem;
+            line-height: 1;
+            color: $accent;
+        }
+    }
+}

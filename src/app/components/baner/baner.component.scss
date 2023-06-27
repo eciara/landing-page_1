@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    background-image: url('../../../assets/images/baner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.baner {
+    &__copy {
+        font-size: 1.5rem;
+        font-weight: 600;
+        @media screen and (min-width: 992px) {
+            margin-top: 3rem;
+        }
+    }
+}

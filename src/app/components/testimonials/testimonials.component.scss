@@ -1,0 +1,44 @@
+:host {
+    display: block;
+    // background: #f2f2f2;
+}
+
+.mat-mdc-card {
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.25rem solid #07727e;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.mat-mdc-card-sm-image {
+    width: 70px !important;
+    height: 70px;
+    border: 3px solid #07727e;
+}
+
+.mdc-card__media {
+    &:first-child {
+        border-radius: 50%;
+    }
+}
+
+.mat-mdc-card-content {
+    min-height: 7.5rem;
+
+    &:first-child {
+        padding: 0 0 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        font-style: italic;
+    }
+}
+
+@media (min-width: 992px) {
+    :host {
+        padding-block: 6rem;
+    }
+}

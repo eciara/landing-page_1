@@ -1,1 +1,36 @@
-<p>faq works!</p>
+<div class="faq container">
+    <div class="faq__header text-center">
+        <h2 class="section__title">
+            Most Asked Questions
+        </h2>
+        <p class="section__copy">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas nisi praesentium rem. Tenetur, ipsam?
+            Molestias non nostrum temporibus! Magni perferendis dolor eius quia expedita minima eligendi nesciunt
+            laudantium reprehenderit?
+        </p>
+    </div>
+    <div class="faq__body" fxLayout="row" fxLayoutGap="2rem">
+        <div class="faq__images">
+            <img src="../../../assets/images/faq.jpg" alt="faq">
+        </div>
+        <div class="faq__aside">
+            <cdk-accordion class="example-accordion">
+                <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
+                    class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                    [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                    <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                        {{ item.question }}
+                        <span class="example-accordion-item-description">
+                            {{ accordionItem.expanded ? '&#8722;' : '&#43;' }}
+                        </span>
+                    </div>
+                    <div class="example-accordion-item-body" role="region"
+                        [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                        [attr.aria-labelledby]="'accordion-header-' + index">
+                        {{ item.answer }}
+                    </div>
+                </cdk-accordion-item>
+            </cdk-accordion>
+        </div>
+    </div>
+</div>

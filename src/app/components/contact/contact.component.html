@@ -1,1 +1,32 @@
-<p>contact works!</p>
+<div class="contact container">
+    <div class="contact__header text-center">
+        <h2 class="section__title">
+            Leave Your Message
+        </h2>
+        <p class="section__copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos numquam ex, cupiditate amet explicabo
+            libero. Nobis molestiae molestias, ea doloribus excepturi eos laudantium tempora.
+        </p>
+    </div>
+    <div class="contact__form">
+        <div class="" fxLayout.md="row" fxLayoutAlign="space-between center" fxLayoutGap="2rem">
+            <mat-form-field fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                <input matInput placeholder="Name" required ngModel>
+            </mat-form-field>
+            <mat-form-field fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+                <input matInput placeholder="Enter your email" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="" fxLayout="row">
+            <mat-form-field fxFlex="100">
+                <input matInput placeholder="Subject" ngModel required>
+            </mat-form-field>
+        </div>
+        <div class="" fxLayout="row">
+            <mat-form-field fxFlex="100">
+                <textarea matInput placeholder="Your Message" ngModel></textarea>
+            </mat-form-field>
+        </div>
+    </div>
+</div>

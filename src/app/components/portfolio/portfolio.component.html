@@ -1,5 +1,5 @@
 <div class="container portfolio section">
-    <div class="portfolio__header">
+    <div class="portfolio__header row">
         <h2 class="section__title">
             A Portfolio Of Our Work
         </h2>
@@ -13,7 +13,7 @@
             <li class="portfolio--btn" *ngFor="let btn of listButtons">{{ btn.title }}</li>
         </ul>
     </div>
-    <div class="portfolio__gallery">
+    <div class="portfolio__gallery row">
         <mat-grid-list cols="3" >
             <mat-grid-tile *ngFor="let item of portfolioGallery">
                 <img [src]="item.image">

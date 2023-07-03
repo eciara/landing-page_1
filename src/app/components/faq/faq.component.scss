@@ -1,13 +1,16 @@
 @import '../../../assets/styles/styles';
 
-:host { 
+:host {
     display: block;
     background: $gray;
 }
 
 .faq {
-    &__aside {
-        width: 100%;
+    &__images {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
 

@@ -1,0 +1,12 @@
+:host {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #fff;
+}

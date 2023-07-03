@@ -1,11 +1,10 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
-.testimonials__body {
-    position: relative;
 
+.owl-theme {
     .owl-nav {
-
+        margin-top: 0;
         .owl-next,
         .owl-prev {
             position: absolute;
@@ -14,26 +13,89 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $accent;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             font-size: 1.25rem;
-            font-weight: 700;
+            font-weight: 800;
+            line-height: 1;
             padding: 0;
+            font-family: 'Material Icons';
         }
 
         .owl-next {
-            right: -1.85rem;
             &:after {
-                content: "\27F6";
+                content: "navigate_next";
             }
         }
 
         .owl-prev {
-            left: -1.85rem;
             &:after {
-                content: "\27F5";
+                content: "chevron_left";
+            }
+        }
+    }
+}
+
+.owl-carousel {
+    &__hero {
+        .owl-theme {
+            .owl-nav {
+
+                .owl-next,
+                .owl-prev {
+                    background-color: transparent;
+                    border: 2px solid $white;
+                    transition: background-color .2s ease-in-out;
+
+                    &:after {
+                        position: relative;
+                        font-size: 2.25rem;
+                        line-height: 1;
+                    }
+
+                    &:hover {
+                        background-color: rgba(255,255,255,.5);
+                    }
+                }
+
+                .owl-next {
+                    right: 2.6rem;
+
+                    &:after {
+                        right: 2.6rem;
+                    }
+                }
+
+                .owl-prev {
+                    left: 2.6rem;
+
+                    &:after {
+                        left: -2.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonials {
+    &__body {
+        position: relative;
+
+        .owl-nav {
+
+            .owl-next,
+            .owl-prev {
+                background: $accent;
+            }
+
+            .owl-next {
+                right: -1.85rem;
+            }
+
+            .owl-prev {
+                left: -1.85rem;
             }
         }
     }

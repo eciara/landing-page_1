@@ -17,6 +17,7 @@ $my-app-theme: mat.define-light-theme((color: (primary: $my-app-primary,
 @include mat.all-component-themes($my-app-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 @import '~normalize.css', '../src/assets/styles/styles';
 
 html,
@@ -34,6 +35,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 p,
@@ -47,31 +49,14 @@ ul {
     margin: 0;
 }
 
-.container {
-    display: block;
-    margin-inline: auto;
-
-    @media (min-width: 576px) {
-        max-width: 540px;
-    }
-
-    @media (min-width: 768px) {
-        max-width: 720px;
-    }
-
-    @media (min-width: 992px) {
-        max-width: 960px;
-    }
-
-    @media (min-width: 1200px) {
-        max-width: 1140px;
-    }
-
-    @media (min-width: 1400px) {
-        max-width: 1320px;
-    }
-}
-
 .text-center {
     text-align: center;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #fff;
+}
+
+.mat-mdc-form-field .mat-mdc-form-field-infix {
+    width: 100%;
 }

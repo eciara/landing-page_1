@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from "@angular/router";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -19,19 +20,22 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { FaqComponent } from './components/faq/faq.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import {BanerComponent} from './components/baner/baner.component';
+import { BanerComponent } from './components/baner/baner.component';
 import { PartnersComponent } from './components/partners/partners.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o'
 
-import {MatMenuModule} from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatIconModule} from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
-import {CdkAccordionModule} from '@angular/cdk/accordion';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const routes: Routes = [
   {
@@ -66,6 +70,7 @@ const routes: Routes = [
     FlexLayoutModule,
     CarouselModule,
     MatMenuModule,
+    MatSidenavModule,
     MatButtonModule,
     MatToolbarModule,
     MatCardModule,
@@ -73,6 +78,10 @@ const routes: Routes = [
     MatIconModule,
     MatListModule,
     CdkAccordionModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

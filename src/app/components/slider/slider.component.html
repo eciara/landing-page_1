@@ -1,5 +1,6 @@
-<owl-carousel-o [options]="customOptions"> 
+<owl-carousel-o [options]="customOptions" class="owl-carousel__hero"> 
     <ng-template carouselSlide *ngFor="let img of images">
+        <div class="overlay-color"></div>
         <img [src]="img.src" [alt]="img.alt">
     </ng-template>  
 </owl-carousel-o>

@@ -1,18 +1,39 @@
-<mat-toolbar>
-    <div fxLayout="row" fxLayoutAlign="space-between" style="width: 100%;">
+<mat-sidenav-container >
+    <mat-toolbar>
         <button routerLink="/" mat-button class="example-icon">
             <img src="../../../assets/images/logo.svg" alt="">
         </button>
-        <div class="menu-list" fxLayout.xs="column">
-            <a mat-button routerLink="/">Home</a>
-            <a mat-button routerLink="/" fragment="services">Services</a>
-            <a mat-button routerLink="/" fragment="about">About</a>
-            <a mat-button routerLink="/" fragment="portfolio">Portfolio</a>
-            <a mat-button routerLink="/" fragment="pricing">Pricing</a>
-            <a mat-button routerLink="/" fragment="testimonials">Testimonials</a>
-            <a mat-button routerLink="/" fragment="faq">FAQ</a>
-            <a mat-button routerLink="/" fragment="contact">Contact Us</a>
-            <button mat-raised-button>Subscribe</button>
-        </div>
+   
+    <div class="menu-list" #sidenav> 
+        <a mat-button routerLink="/">Home</a>
+        <a mat-button routerLink="/" fragment="services">Services</a>
+        <a mat-button routerLink="/" fragment="about">About</a>
+        <a mat-button routerLink="/" fragment="portfolio">Portfolio</a>
+        <a mat-button routerLink="/" fragment="pricing">Pricing</a>
+        <a mat-button routerLink="/" fragment="testimonials">Testimonials</a>
+        <a mat-button routerLink="/" fragment="faq">FAQ</a>
+        <a mat-button routerLink="/" fragment="contact">Contact Us</a>
+        <button mat-raised-button>Subscribe</button>
     </div>
 </mat-toolbar>
+</mat-sidenav-container>
+
+<!-- <mat-sidenav-container> -->
+<!-- <mat-sidenav #sidenav> -->
+<!-- <mat-nav-list (click)="sidenav.close()"> -->
+<!-- <a mat-list-item routerLink="/">Home</a> -->
+<!-- <a mat-list-item routerLink="/" fragment="about">About</a> -->
+<!-- <a mat-list-item routerLink="/" fragment="portfolio">Portfolio</a> -->
+<!-- <a mat-list-item routerLink="/" fragment="pricing">Pricing</a> -->
+<!-- <a mat-list-item routerLink="/" fragment="testimonials">Testimonials</a> -->
+<!-- <a mat-list-item routerLink="/" fragment="faq">FAQ</a> -->
+<!-- <a mat-list-item routerLink="/" fragment="contact">Contact Us</a> -->
+<!-- <a mat-list-item>Subscribe</a> -->
+<!-- </mat-nav-list> -->
+<!-- </mat-sidenav> -->
+<!-- <mat-toolbar color="primary"> -->
+<!-- <button mat-icon-button (click)="sidenav.open()"> -->
+<!-- <mat-icon>menu</mat-icon> -->
+<!-- </button> -->
+<!-- </mat-toolbar> -->
+<!-- </mat-sidenav-container> -->

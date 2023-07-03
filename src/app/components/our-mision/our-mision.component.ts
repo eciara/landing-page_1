@@ -13,6 +13,7 @@ export interface Card {
 })
 
 export class OurMisionComponent {
+
   boxes = [
     {
       icon: 'redeem',

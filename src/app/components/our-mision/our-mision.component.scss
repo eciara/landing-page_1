@@ -1,3 +1,9 @@
+@import '../../../assets/styles/varabiles';
+
+:host {
+    display: block;
+    background-color: $gray;
+}
 
 .mat-icon {
     width: 100%;

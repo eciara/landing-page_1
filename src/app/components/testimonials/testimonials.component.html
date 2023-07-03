@@ -1,25 +1,27 @@
-<div class="container testimonials">
-    <div class="testimonials__header text-center">
+<div class="container testimonials section">
+    <div class="row">
+    <div class="testimonials__header text-center col">
         <h2 class="section__title">
             Testimonials
         </h2>
         <p class="section__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ab maiores aliquid, repellendus doloribus,
             illo dolor laudantium ipsa perferendis eos dolorem optio quia.</p>
     </div>
-    <div class="testimonials__body">
+    <div class="testimonials__body col">
         <owl-carousel-o [options]="testimonialsOptions">
             <ng-template carouselSlide *ngFor="let opinion of testimonials">
                 <mat-card class="example-card">
                     <mat-card-content>
                         <p>{{ opinion.desc }}</p>
                     </mat-card-content>
-                    <mat-card-footer  fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="16">
+                    <mat-card-footer class="d-flex align-items-center justify-content-center">
                         <img mat-card-sm-image [src]="opinion.avatar" alt="opinion.person">
-                        <div class=""><mat-card-title>{{ opinion.person }}</mat-card-title>
+                        <div class="ps-3"><mat-card-title>{{ opinion.person }}</mat-card-title>
                         <mat-card-subtitle>Dog Breed</mat-card-subtitle></div>
                     </mat-card-footer>
                 </mat-card>
             </ng-template>
         </owl-carousel-o>
     </div>
+</div>
 </div>

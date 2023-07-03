@@ -1,19 +1,22 @@
-<div class="faq container">
-    <div class="faq__header text-center">
-        <h2 class="section__title">
-            Most Asked Questions
-        </h2>
-        <p class="section__copy">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas nisi praesentium rem. Tenetur, ipsam?
-            Molestias non nostrum temporibus! Magni perferendis dolor eius quia expedita minima eligendi nesciunt
-            laudantium reprehenderit?
-        </p>
-    </div>
-    <div class="faq__body" fxLayout="row" fxLayoutGap="2rem">
-        <div class="faq__images">
-            <img src="../../../assets/images/faq.jpg" alt="faq">
+<div class="faq container section">
+    <div class="row">
+        <div class="faq__header text-center col">
+            <h2 class="section__title">
+                Most Asked Questions
+            </h2>
+            <p class="section__copy">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos voluptas nisi praesentium rem. Tenetur,
+                ipsam?
+                Molestias non nostrum temporibus! Magni perferendis dolor eius quia expedita minima eligendi nesciunt
+                laudantium reprehenderit?
+            </p>
         </div>
-        <div class="faq__aside">
+    </div>
+    <div class="row faq__body">
+        <div class="faq__images col-md-6">
+            <img src="../../../assets/images/faq.jpg" alt="faq" class="img-fluid">
+        </div>
+        <div class="faq__aside col-md-6">
             <cdk-accordion class="example-accordion">
                 <cdk-accordion-item *ngFor="let item of items; let index = index;" #accordionItem="cdkAccordionItem"
                     class="example-accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"

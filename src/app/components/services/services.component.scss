@@ -1,0 +1,24 @@
+@import '../../../assets/styles/varabiles';
+
+:host {
+    display: block;
+    background-color: $gray;
+}
+
+.mat-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.material-icons {
+    font-size: 3.5rem;
+    font-weight: 700;
+    // background: -webkit-linear-gradient(#e66465, #9198e5);
+    background: -webkit-linear-gradient(#d25152, #6c76e4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mat-mdc-card-title {
+    font-size: 1.35rem;
+}

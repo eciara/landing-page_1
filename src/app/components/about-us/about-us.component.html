@@ -1,10 +1,10 @@
 <div class="about container section">
     <div class="row gap-3">
-        <div class="about__images col-md-6">
-            <img src="../../../assets/images/about-1.jpg" alt="About">
-            <img src="../../../assets/images/about-2.jpg" alt="About">
+        <div class="about__figures col-md-6">
+            <img src="../../../assets/images/about-1.jpg" alt="About" class="about__images about__images--first">
+            <img src="../../../assets/images/about-2.jpg" alt="About" class="about__images about__images--second">
         </div>
-        <div class="about__body col-md-6">
+        <div class="about__body section__body col-md-6">
             <p class="section__subtitle">About Us</p>
             <h2 class="section__header">
                 The #1 Company On IT Solutions & Development Field
@@ -12,9 +12,9 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi soluta voluptatum dolorem, unde iste
                 expedita ipsam vero eius harum repudiandae dicta voluptate culpa, voluptates tenetur repellendus rerum
                 iure similique reprehenderit?</p>
-            <div class="counter" fxLayout="row wrap">
-                <div class="counter__body" *ngFor="let count of counters">
-                    <p class="counter__number" fxFlex.md="50" fxFlex.lg="50">
+            <div class="counter d-flex pb-3">
+                <div class="counter__body d-flex flex-column align-items-center justify-content-center" *ngFor="let count of counters">
+                    <p class="counter__number">
                         +{{ count.number }}
                     </p>
                     <span class="counter__copy">
@@ -22,7 +22,7 @@
                     </span>
                 </div>
             </div>
-            <button mat-raised-button color="primary">Learn More</button>
+            <button mat-raised-button>Learn More</button>
         </div>
     </div>
 </div>

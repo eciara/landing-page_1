@@ -1,0 +1,13 @@
+@import '../../../assets/styles/varabiles';
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+}
+
+i {
+    font-size: 1.5rem;
+    color: $white;
+}

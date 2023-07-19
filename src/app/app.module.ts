@@ -22,12 +22,14 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BanerComponent } from './components/baner/baner.component';
 import { PartnersComponent } from './components/partners/partners.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
 
 import { CarouselModule } from 'ngx-owl-carousel-o'
 
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -62,6 +64,7 @@ const routes: Routes = [
     FooterComponent,
     BanerComponent,
     PartnersComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,6 +75,7 @@ const routes: Routes = [
     MatMenuModule,
     MatSidenavModule,
     MatButtonModule,
+    MatButtonToggleModule,
     MatToolbarModule,
     MatCardModule,
     MatGridListModule,

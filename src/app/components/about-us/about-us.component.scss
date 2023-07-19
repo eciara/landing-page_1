@@ -1,0 +1,49 @@
+@import './../../../assets/styles/styles';
+
+.mdc-button--raised {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.mat-mdc-raised-button {
+    &:not(:disabled) {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.about {
+    &__figures {
+        position: relative;
+    }
+
+    &__images {
+        width: 50%;
+        height: 350px;
+        object-fit: cover;
+
+        &--second {
+            position: absolute;
+            left: 40%;
+            top: 30%;
+            margin-bottom: 30%;
+        }
+    }
+
+    .counter {
+        @media (max-width: 767.98px) {
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            gap: 2.5rem;
+        }
+
+        &__number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+    }
+}

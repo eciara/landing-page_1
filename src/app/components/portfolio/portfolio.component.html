@@ -1,23 +1,24 @@
 <div class="container portfolio section">
-    <div class="portfolio__header row">
+    <div class="portfolio__header row text-center">
         <h2 class="section__title">
             A Portfolio Of Our Work
         </h2>
-        <p class="section__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab, reiciendis, modi inventore voluptatem
-            repudiandae asperiores, accusamus nemo doloribus at ipsum aliquam deleniti ullam atque soluta exercitationem
-            tenetur est explicabo?
+        <p class="section__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab, reiciendis, modi
+            inventore voluptatem repudiandae asperiores, accusamus nemo doloribus at ipsum aliquam deleniti ullam atque
+            soluta exercitationem tenetur est explicabo?
         </p>
     </div>
-    <div class="portfolio__list">
-        <ul>
-            <li class="portfolio--btn" *ngFor="let btn of listButtons">{{ btn.title }}</li>
+    <div class="portfolio__aside">
+        <ul class="portfolio__list">
+            <li class="portfolio__list--item btn" *ngFor="let btn of listButtons">{{ btn.title }}</li>
         </ul>
     </div>
     <div class="portfolio__gallery row">
-        <mat-grid-list cols="3" >
-            <mat-grid-tile *ngFor="let item of portfolioGallery">
-                <img [src]="item.image">
-            </mat-grid-tile>
-        </mat-grid-list>
+        <div class="col-md-6 col-lg-4 portfolio__image" *ngFor="let item of portfolioGallery">
+            <img [src]="item.image">
+            <div class="portfolio__overlay">
+                <app-social-media></app-social-media>
+            </div>
+        </div>
     </div>
 </div>

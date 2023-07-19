@@ -1,6 +1,6 @@
 <div class="our-mision container section">
     <div class="row">
-        <div class="our-mision__body col-md-6">
+        <div class="our-mision__body section__body col-md-6">
             <p class="section__subtitle">Our mission</p>
             <h2 class="section__header">
                 Create Your Way To Success
@@ -10,14 +10,14 @@
                 aspernatur recusandae! Temporibus ab ut iste laudantium cumque molestiae, omnis molestias quidem,
                 laboriosam
                 cupiditate beatae quos?</p>
-            <div class="our-mission__box" *ngFor="let box of boxes">
-                <div class="our-mission__icons">
+            <div class="our-mission__box d-flex align-items-center" *ngFor="let box of boxes">
+                <div class="our-mission__icons d-flex align-items-center me-3">
                     <mat-icon aria-hidden="false" aria-label="">
                         {{ box.icon }}
                     </mat-icon>
                 </div>
                 <div class="our-mission__aside">
-                    <h4>{{ box.title }}</h4>
+                    <h4 class="our-mission__heading">{{ box.title }}</h4>
                     <p>{{ box.desc }}</p>
                 </div>
             </div>

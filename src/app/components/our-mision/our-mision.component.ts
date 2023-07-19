@@ -35,12 +35,12 @@ export class OurMisionComponent {
   cards: Card[] = [
     {
       cols: 1, 
-      rows: 4,
+      rows: 3,
       image: '../../../assets/images/our-mision/our-mision-1.jpg'
     },
     {
       cols: 1, 
-      rows: 4,
+      rows: 3,
       image: '../../../assets/images/our-mision/our-mision-2.jpg'
     },
     {

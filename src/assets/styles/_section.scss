@@ -1,12 +1,8 @@
-
 .section {
-
-    @media screen and (min-width: 992px) {
-        padding-block: 6rem;
-    }
+    padding-block: clamp(2.5rem, 1.0000rem + 6.6667vw, 6rem);
 
     &__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         line-height: 1.1;
     }
@@ -16,6 +12,7 @@
         font-size: 1rem;
         font-weight: 800;
         font-style: italic;
+        line-height: 1;
         letter-spacing: 1px;
         text-align: left;
         text-transform: capitalize;
@@ -23,15 +20,22 @@
 
         &:after {
             content: "";
+            position: absolute;
             width: 50px;
             top: 50%;
             transform: translateY(-50%);
             background: $accent;
-            display: inline-block;
             height: 2px;
-            margin-left: 10px;
+            margin-left: .75rem;
         }
     }
+
+    &__body {
+        >*+* {
+            margin-top: clamp(1rem, 0.0769rem + 2.5641vw, 2rem);
+        }
+    }
+
     &__copy {
         font-size: 1.25rem;
         line-height: 1.6;

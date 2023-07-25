@@ -1,4 +1,8 @@
-<ul [class]="">
+<ul [ngClass]="{
+    'social-list__out-team' : position == 'out-team', 
+    'social-list__portfolio' : position == 'portfolio', 
+    'social-list__footer' : position == 'footer'
+}">
     <li *ngFor="let icon of socialMedia">
         <a href="">
             <i class="fa-brands" [class]="icon.title"></i>

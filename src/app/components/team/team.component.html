@@ -7,15 +7,28 @@
             ipsa? Dolore ea, sit quos
             impedit perferendis eos in asperiores veniam doloribus veritatis nesciun.</p>
     </div>
-    <div class="our-team__aside" fxLayout="row" fxLayoutAlign="space-between center">
-        <mat-card class="example-card" fxFlex="32" *ngFor="let person of cardTeam">
-            <img mat-card-image [src]="person.image" [alt]="person.name">
-            <mat-card-title>
-                {{ person.name }}
-            </mat-card-title>
-            <mat-card-content>
-                <p>{{ person.position }}</p>
-            </mat-card-content>
-        </mat-card>
+    <div class="our-team__aside row">
+        <div class="col-md-4 our-team__box" *ngFor="let person of cardTeam">
+            <mat-card class="example-card">
+                <img mat-card-image [src]="person.image" [alt]="person.name">
+                <mat-card-title-group>
+                    <mat-card-title>
+                        {{ person.name }}
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        {{ person.position }}
+                    </mat-card-subtitle>
+                    <span class="mat-card-icon" (click)="isVisible = !isVisible"> 
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </span>
+                </mat-card-title-group>
+                <ng-container *ngIf="isVisible">
+                    <mat-card-content >
+                        <p>{{ person. description }}</p>
+                        <app-social-media position="out-team"></app-social-media>
+                    </mat-card-content>
+                </ng-container>
+            </mat-card>
+        </div>
     </div>
 </div>

@@ -7,7 +7,18 @@ ul {
     list-style: none;
 }
 
-i {
-    font-size: 1.5rem;
-    color: $white;
+.social-list {
+    &__out-team {
+        i {
+            font-size: 1.2rem;
+            color: $primary;
+        }
+    }
+
+    &__portfolio {
+        i {
+            font-size: 1.5rem;
+            color: $white;
+        }
+    }
 }

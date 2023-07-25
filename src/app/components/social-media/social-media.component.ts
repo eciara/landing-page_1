@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SocialMediaComponent {
   @Input()
-  class: any;
+  position: any;
 
 socialMedia = [
   {

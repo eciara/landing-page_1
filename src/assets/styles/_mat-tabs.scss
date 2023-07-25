@@ -1,0 +1,50 @@
+.mat-mdc-tab-body-wrapper {
+    .mat-mdc-tab-body-content {
+        overflow: hidden;
+    }
+}
+
+.mat-mdc-tab-header {
+    .mat-mdc-tab-labels {
+        gap: .75rem;
+        margin-bottom: 2rem;
+
+        .mdc-tab-indicator {
+            width: 0;
+        }
+    }
+}
+
+.mat-mdc-tab-ripple {
+    background-color: $accent;
+    border: 2px solid $accent;
+    border-radius: 5rem;
+    transition: all .25s ease;
+}
+
+.mat-mdc-tab {
+
+    &:hover {
+        .mat-mdc-tab-ripple  {
+            background-color: $white;
+        }
+        .mdc-tab__text-label {
+            color: $accent !important;
+        }
+    }
+}
+
+.mat-mdc-tab-label-container {
+    .mat-mdc-tab {
+       
+        .mdc-tab__text-label {
+            color: $white;
+        }
+
+        &.mdc-tab--active {
+            .mdc-tab__text-label {
+                color: $white;
+            }
+        }
+    }
+}

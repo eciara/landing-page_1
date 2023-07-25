@@ -1,9 +1,50 @@
+@import '../../../assets/styles/varabiles';
+
 .our-team {
     &__header {
         text-align: center;
     }
 }
 
-.mat-mdc-card {
-    text-align: center;
+.mdc-card {
+    height: 100%;
+}
+
+.mat-mdc-card-title-group {
+    align-items: center;
+    text-align: left;
+    margin-top: .5rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    width: auto;
+
+    .mat-mdc-card-title {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .mat-card-subtitle {
+        margin-top: .5rem;
+    }
+}
+
+.mat-card-icon {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.mat-mdc-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    
+    &:last-child {
+        padding-top: 1rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
 }

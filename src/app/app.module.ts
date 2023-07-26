@@ -40,6 +40,7 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatTabsModule } from '@angular/material/tabs';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 const routes: Routes = [
   {
@@ -67,6 +68,7 @@ const routes: Routes = [
     BanerComponent,
     PartnersComponent,
     SocialMediaComponent,
+    AvatarComponent,
   ],
   imports: [
     BrowserModule,

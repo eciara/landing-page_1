@@ -31,7 +31,7 @@ export class TeamComponent {
       image: '../../../assets/images/our-team/our-team-3.jpg',
       name: 'Jackeline Fanning',
       position: 'Graphic Designer',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida erat libero.'
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus molestie sapien ac egestas. Nam pharetra turpis enim, quis ornare.'
     },
   ]
 }

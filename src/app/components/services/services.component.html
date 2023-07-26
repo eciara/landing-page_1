@@ -1,28 +1,11 @@
-<div class="services container section">
-    <div class="services__header text-center">
-        <h1 class="section__title">Awesome Services</h1>
-        <p class="section__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod ducimus repellendus? Rerum magnam
-            illum
-            impedit iste enim perferendis.</p>
-    </div>
-    <div fxLayout="row wrap">
-            <mat-card *ngFor="let card of cards" class="flex-column align-items-center text-center col-md-6 col-lg-4 p-4">
-                <mat-icon>
-                    <span class="material-icons">
-                        {{ card.icon }}
-                    </span>
-                </mat-icon>
-                <mat-card-title>
-                    <h4>{{ card.title }}</h4>
-                </mat-card-title>
-                <mat-card-content>
-                    {{ card.desc }}
-                </mat-card-content>
-            </mat-card>
-    </div>
-    <div class="row">
-        <div class="col mt-4 text-center">
-            <button mat-button color="accent">See all services</button>
-        </div>
-    </div>
-</div>
+<mat-card>
+    <mat-icon class="mx-auto">
+        <ng-content select="icon"></ng-content>
+    </mat-icon>
+    <mat-card-title>
+        <ng-content select="title"></ng-content>
+    </mat-card-title>
+    <mat-card-content>
+        <ng-content></ng-content>
+    </mat-card-content>
+</mat-card>

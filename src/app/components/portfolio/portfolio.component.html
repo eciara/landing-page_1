@@ -9,12 +9,12 @@
         </p>
     </div>
     <div class="portfolio__aside">
-        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" animationDuration="0ms">
             <mat-tab *ngFor="let btn of listButtons" 
                 label="{{ btn.title }}" 
                 animationDuration="0ms">
                 <div class="portfolio__gallery row">
-                    <div class="col-md-6 col-lg-4 portfolio__image" *ngFor="let item of portfolioGallery">
+                    <div class="col-sm-6 col-lg-4 portfolio__image" *ngFor="let item of portfolioGallery">
                         <img [src]="item.image">
                         <div class="portfolio__overlay">
                             <app-social-media position="portfolio"></app-social-media>

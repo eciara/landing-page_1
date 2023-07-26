@@ -1,8 +1,35 @@
 <app-header></app-header>
 
-<app-services id="services"></app-services>
+<section class="services" id="services">
+    <div class="container section">
+        <div class="row">
+            <div class="col services__header text-center">
+                <h1 class="section__title">Awesome Services</h1>
+                <p class="section__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod ducimus repellendus? Rerum magnam illum impedit iste enim perferendis.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="flex-column align-items-center text-center col-sm-6 col-lg-4 p-4" *ngFor="let card of cards">
+            <app-services>
+                <span ngProjectAs="icon" class="material-icons">
+                    {{card.icon}}
+                </span>
+                <h4 ngProjectAs="title">{{ card.title }}</h4>
+                <p ngProjectAs="description">{{ card.desc }}</p>
+            </app-services>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col mt-4 text-center">
+                <button mat-button color="accent">See all services</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-<app-about-us id="about"></app-about-us>
+<section class="about" id="about">
+    <app-about-us></app-about-us>
+</section>
 
 <app-our-mision></app-our-mision>
 
@@ -16,7 +43,30 @@
 
 <app-partners></app-partners>
 
-<app-testimonials id="testimonials"></app-testimonials>
+<section class="testimonials" id="testimonials">
+    <div class="container section">
+        <div class="row">
+            <div class="testimonials__header text-center col">
+                <h2 class="section__title">Testimonials</h2>
+                <p class="section__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ab maiores aliquid, repellendus doloribus, illo dolor laudantium ipsa perferendis eos dolorem optio quia.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="testimonials__body col">
+                <owl-carousel-o [options]="testimonialsOptions">
+                    <ng-template carouselSlide *ngFor="let opinion of testimonials">
+                        <app-testimonials>
+                            <p>{{ opinion.desc }}</p>
+                            <app-avatar class="avatar" [image]="opinion.avatar"></app-avatar>
+                            <div ngProjectAs="person">{{ opinion.person }}</div>
+                            <div ngProjectAs="position">{{ opinion.position }}</div>
+                        </app-testimonials>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
 
 <app-faq id="faq"></app-faq>
 
